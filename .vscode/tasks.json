@@ -14,5 +14,11 @@
                 "isDefault": true
             }
         }
+    ],
+    "presentation": {
+        "reveal": "silent"
+    },
+    "args": [
+        "--outDir js"
     ]
 }

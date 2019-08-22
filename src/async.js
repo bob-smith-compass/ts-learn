@@ -1,3 +1,4 @@
+// Target: ES2015^
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -33,22 +34,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var message = "TypeScript 3.5.1";
-debugger;
-console.log(message);
-// Target: ES2015^
-// async function delay(ms: number): Promise<void> {
-//     return new Promise<void>(resolve => {
-//       setTimeout(resolve, ms);
-//     });
-//   }
-//   async function main() {
-//     const ms = 1000;
-//     console.log(`Waiting for ${ms}ms...`);
-//     await delay(ms);
-//     console.log("Done!");
-//   }
-//   main();
 function delay(ms) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
@@ -76,4 +61,4 @@ function main() {
     });
 }
 main();
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=async.js.map
