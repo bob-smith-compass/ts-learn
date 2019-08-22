@@ -2,7 +2,7 @@
 
 const message: string = "TypeScript 3.5.1";
 
-debugger;
+// debugger;
 
 console.log(message);
 
