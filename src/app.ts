@@ -2,9 +2,33 @@
 
 const message: string = "TypeScript 3.5.1";
 
-// debugger;
+debugger;
 
 console.log(message);
+function GetAllBooks() {
+    let books = [
+        {title: 'JS', author: 'David', available: true},
+        {title: 'Webpack', author: 'John', available: true},
+        {title: 'CSS', author: 'Crocford', available: false}
+    ];
+    return books;
+}
+function LogFirstAvailableBook(books) {
+    
+    let numberOfBooks = books.length;
+    let FirstAvailable = '';
+    for (let curBook of books) {
+
+        if(curBook.available) {
+            FirstAvailable = curBook.title;
+            break;
+        }
+    }
+    console.log(`Total books: ${numberOfBooks}`);
+    console.log(`First available books: ${FirstAvailable}`);
+
+}
+LogFirstAvailableBook(GetAllBooks());
 
 // Target: ES2015^
 
